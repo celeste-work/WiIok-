@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wilok</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="images/1.png" type="image/x-icon">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="d-flex vh-100">
+
+            <div class="sidebar bg-gradient text-white">
+                <!-- hamburguesa -->
+                <div class="menu-header d-flex justify-content-between align-items-center px-3 py-2">
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="menuDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-bars" aria-hidden="true"></i> 
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+                            <li>
+                                <a class="dropdown-item text-light" href="#">Configuración</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-light" href="#">Ayuda</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" id="close-chat-btn" href="#">Cerrar sesión</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <i class="fas fa-user-plus fs-4" id="add-user-btn"></i>
+            
+                </div>
+                <!-- lista d usuarios -->
+                <div class="contact-list">
+
+                    <div class="contact-item d-flex align-items-center px-3 py-2" data-id="caterina" data-name="Caterina Gómez" data-pic="caterina.png">
+
+                        <div class="perfil-container position-relative">
+                            <img src="images/caterina.png" alt="Perfil" class="rounded-circle me-3">
+                            <span class="estado-de-conexion online"></span>
+                        </div>  
+
+                        <div id="chat-caterina" class="contact-info flex-grow-1">
+                            <strong>Caterina Gómez</strong>
+                            <p class="mb-0">Hola, ¿cómo estás?</p>
+                        </div>
+
+                        <span class="text-muted small">22:33</span>
+                    </div>
+
+                    <div  class="contact-item d-flex align-items-center px-3 py-2" data-id="susana" data-name="Susana Ruiz" data-pic="susana.png">
+
+                        <div class="perfil-container position-relative">
+                            <img src="images/susana.png" alt="Perfil" class="rounded-circle me-3">
+                            <span class="estado-de-conexion offline"></span>
+                        </div>
+
+                        <div id="chat-susana" class="contact-info flex-grow-1">
+                            <strong>Susana Ruiz</strong>
+                            <p class="mb-0">Hola, ¿cómo estás?</p>
+                        </div>
+
+                        <span class="text-muted small">22:31</span>
+                    </div>
+
+                    <div class="contact-item  d-flex align-items-center px-3 py-2" data-id="mariana" data-name="Mariana Lopez" data-pic="mariana.png">
+
+                        <div class="perfil-container position-relative">
+                            <img src="images/mariana.png" alt="Perfil" class="rounded-circle me-3">
+                            <span class="estado-de-conexion offline"></span>
+                        </div>
+
+                        <div id="chat-mariana" class="contact-info flex-grow-1">
+                            <strong>Mariana Lopez</strong>
+                            <p class="mb-0">Hola, ¿cómo estás?</p>
+                        </div>
+
+                        <span class="text-muted small">20:21</span>
+                    </div>
+
+                    <div class="contact-item  d-flex align-items-center px-3 py-2" data-id="juan" data-name="Juan Perez" data-pic="juan.png">
+
+                        <div class="perfil-container position-relative">
+                            <img src="images/juan.png" alt="Perfil" class="rounded-circle me-3">
+                            <span class="estado-de-conexion online"></span>
+                        </div>
+
+                        <div id="chat-juan" class="contact-info flex-grow-1">
+                            <strong>Juan Perez</strong>
+                            <p class="mb-0">Hola, ¿cómo estás?</p>
+                        </div>
+
+                        <span class="text-muted small">16:44</span>
+                    </div>
+
+                    <div class="contact-item  d-flex align-items-center px-3 py-2" data-id="maria" data-name="Maria Ortiz" data-pic="maria.png">
+
+                        <div class="perfil-container position-relative">
+                            <img src="images/maria.png" alt="Perfil" class="rounded-circle me-3">
+                            <span class="estado-de-conexion online"></span>
+                        </div>
+
+                        <div id="chat-maria" class="contact-info flex-grow-1">
+                            <strong>Maria Ortiz</strong>
+                            <p class="mb-0">Hola, ¿cómo estás?</p>
+                        </div>
+
+                        <span class="text-muted small">12:09</span>
+                    </div>
+
+                </div>
+            </div>
+
+        <!--chat***************************************************************************************************-->
+        <div class="chat-container d-flex flex-column">
+            <div class="chat-header bg-light d-flex align-items-center px-3 py-2">
+                <button class="btn btn-secondary d-none" id="back-btn">
+                    <i class="fas fa-arrow-left"></i> Atrás
+                </button>
+                <img>
+                <strong></strong>
+            </div>
+
+            <!-- pantalla inicial -->
+            <div id="pantalla-inicial" class="flex-grow-1 d-flex flex-column justify-content-center align-items-center">
+                <img src="images/1.png" alt="Cifrado" class="img-fluid mb-3" style="max-width: 150px;">
+                <p class="text-center">
+                    <i class="fas fa-lock" ></i> Tus mensajes personales están cifrados de extremo a extremo.
+                </p>
+            </div>
+
+            <div class="chat-body flex-grow-1 p-3 overflow-auto d-none">
+                <div class="message bot mb-3">
+                    <div class="message-content p-2 rounded bg-warning text-white"></div>
+                    <div class="message-time text-end small text-muted"></div>
+                </div>
+            </div>
+
+            <div class="chat-footer d-flex p-3 bg-light d-none">
+                <input type="text" id="user-input" class="form-control me-2" placeholder="Escribe un mensaje">
+                <button id="send-btn" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script> 
+
+        <script src="script.js"></script>
+    </body>
+
+</html>

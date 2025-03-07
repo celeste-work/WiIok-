@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wilok!</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="1.png" type="image/x-icon">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header class="d-flex justify-content-between align-items-center p-3">
+            <nav class="navbar navbar-expand-lg shadow">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-orange" href="#">Wilok!</a>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke="white" stroke-width="2" stroke-linecap="round" d="M4 7h22M4 15h22M4 23h22"/>
+                        </svg>
+                    </button>
+    
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active text-light" aria-current="page" href="#footer">Contacto</a>
+                            </li>
+        
+                            <li class="nav-item">
+                                 <a class="nav-link text-light" href="#contacto">Saber más</a>
+                            </li>
+        
+                            <li class="nav-item ">
+                                <a class="nav-link text-light" href="#">Ayuda</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+            <!-- <h1 class="text-orange logo">Wilok!</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#footer" class="nav-link montserrat">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contacto" class="nav-link montserrat">Saber más</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link montserrat">Ayuda</a>
+                    </li>
+                </ul>
+            </nav> -->
+        </header>
+
+        <main class="position-relative">
+            <div class="background-container">
+                <img src="images/fondo-home.png" alt="Imagen de fondo" class="background-image">
+            </div>
+
+            <div class="content d-flex align-items-center justify-content-between">
+                <div class="text-logo-container text-white text-center">
+                    <img src="2 (2).png" alt="Logo Wilok Blanco" class="logo-white">
+                    <div class="parrafo"> 
+                        <p>Únete al chat que conecta personas de todo el mundo en un ambiente seguro y amigable</p> 
+                    </div>
+                </div>
+            
+                <div class="text-button-container text-white">
+                    <p class="header-text">Ingresá y conocé gente con Wilok! en todos tus dispositivos</p>
+                    <div class="button-container mt-3">
+                        <button class="btn btn-orange league-spartan" id="iniciarSesionBtn">Iniciar sesión</button>
+                        <button class="btn btn-orange league-spartan"id="registrarseBtn">Regístrate</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+            <div class="container-fluid p-0 mb-0 p-5">       
+                <div class="row align-items-center mt-3 position-relative">
+                    <div class="col-12">
+                        <img src="images/1.png" alt="Marca de agua" class="watermark primer-watermark watermark-top-left d-none d-lg-block">
+                    </div>
+                
+                    <div id="contacto" class="col-lg-5 col-md-12 text-center mt-3">
+                        <p class="primer-titulo">
+                            <strong>Mantené el contacto<br>con tus conocidos</strong><br>
+                            <span>y conocé gente nueva</span>
+                        </p>
+                    </div>
+                
+                    <div class="col-lg-7 col-md-12 text-center mt-3">
+                        <img class="img-fluid image-container-chicas" src="images/imagen-chicas.png" alt="Grupo de amigos sonriendo">
+                    </div>
+                </div>
+                
+                <div class="row align-items-center justify-content-center mt-5 position-relative">
+                    <div class="col-lg-7 col-md-12 text-center mb-3">
+                        <img class="img-fluid image-container-abuelo" src="images/imagen-abuelo.png" alt="Persona mayor con niño">
+                    </div>
+                
+                    <div class="col-lg-5 col-md-12 text-center mb-4">
+                        <p class="segundo-titulo">Expresá tus sentimientos</p>
+                        <p class="segundo-subtitulo">¡Tenés la libertad de expresar lo<br>que quieras!</p>
+                    </div>
+                    <div class="col-12">
+                        <img src="images/1.png" alt="Marca de agua" class="watermark watermark-top-right d-none d-lg-block">
+                    </div>
+                </div>
+            </div> 
+        
+            <footer id="footer" class=" bg-footer text-center text-lg-start">
+                <div class="container p-4">
+                    <div class="row align-items-center text-center text-md-start">
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0 d-flex justify-content-center">
+                            <img src="images/1.png" alt="Wilok Logo" class="me-3" width="100">
+                            <img src="images/logo-principal.png" alt="Media Pila Logo" width="100">
+                        </div>
+            
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0 g-2">
+                            <h5 class="text-capitalize mb-3">Contacto</h5>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i>Calle Cualquiera 123, Mundo.</li>
+                                <li class="mb-2"><i class="bi bi-envelope-fill me-2"></i><a href="mailto:contacto@wilok.com" class="text-dark text-decoration-none">contacto@wilok.com</a></li>
+                                <li><i class="bi bi-telephone-fill me-2"></i>11 xxxx - xxxx</li>
+                            </ul>
+                        </div>
+            
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0 g-2">
+                            <h5 class="text-capitalize">Home</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="#!" class="text-dark text-decoration-none">¿Quiénes somos?</a></li>
+                                <li class="mb-2"><a href="#!" class="text-dark text-decoration-none">Ayuda</a></li>
+                                <li><a href="#!" class="text-dark text-decoration-none">Saber más</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="text-center p-3 bg-social">
+                    <a href="#" class="me-3 text-dark"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="me-3 text-dark"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="me-3 text-dark"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-dark"><i class="bi bi-tiktok"></i></a>
+                </div>
+            
+                <div class="text-center p-2 bg-orange text-black">
+                    2024 &copy; Wilok! Todos los derechos reservados.
+                </div>
+                    
+            </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+   </body>
+</html>
