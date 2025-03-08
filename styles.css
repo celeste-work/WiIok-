@@ -1,4 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Great+Vibes&family=League+Spartan:wght@100..900&family=Qwitcher+Grypen:wght@400;700&display=swap');
+
+/* * {
+    outline: 1px solid red !important;
+} */
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100vh;
+    background: blue;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+
+
 body, html {
     background-color: #FFF;
     font-family: 'Montserrat', sans-serif;
@@ -9,6 +28,7 @@ body, html {
 .logo {
     font-family: 'League Spartan', sans-serif;
     font-size: 2rem;
+    font-weight: 600;
     margin: 0;
     color: #EF8354;
 }
@@ -41,6 +61,17 @@ header {
     text-decoration: underline;
 }
 
+.navbar-toggler{
+    border-color: #EF8354;
+}
+
+.navbar-toggler:focus, 
+.navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+}
+
+
 .background-container {
     position: relative;
     width: 100%;
@@ -61,9 +92,6 @@ header {
     right: 5%;
     transform: translateY(-50%);
     z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -238,6 +266,7 @@ footer .container {
 
     .parrafo, .header-text{
         font-size: 19px;
+        font-weight: 600;
     }
 
     .button-container{
@@ -262,8 +291,6 @@ footer .container {
     } */
     .content {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         text-align: center;
     }
 
@@ -304,11 +331,11 @@ footer .container {
     }
 
     .parrafo {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .header-text {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .btn-orange {
@@ -326,49 +353,14 @@ footer .container {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 479px){
+
     .background-container {
         height: calc(100vh - 25vw); 
     }
 
     .text-logo-container {
         max-width: 100%;
-    }
-
-    .logo-white {
-        display: none;
-    }
-
-    .parrafo {
-        font-size: 1rem;
-    }
-
-    .header-text {
-        font-size: 0.9rem;
-        text-align: center; 
-        margin-left: auto; 
-        margin-right: auto; 
-        width: fit-content;
-    }
-
-    .btn-orange {
-        padding: 5px 0px;
-        font-size: 0.9em;
-    }
-
-    .button-container{
-        max-width: 65%;
-    }
-
-    .btn{
-        font-size: 12px;
-        height: 25px;
-    }
-}
-
-@media (max-width: 479px){
-    .background-container {
-        height: calc(100vh - 25vw); 
     }
 
     .logo-white {
@@ -404,25 +396,27 @@ footer .container {
 
 
 /*RESPONSIVE FOOTER*/
-@media (min-width: 991px) {
-    .row.align-items-center {
-        display: flex; 
-        justify-content: space-between; 
-        text-align: left; 
-    }
-
-    .col-lg-4 {
-        flex: 1; 
-        max-width: 30%; 
-        margin: 0 10px;
-    }
-
-    .logo-footer {
-        margin-right: auto; 
-    }
-}
 
 @media (max-width: 990px) {
+    
+
+    .container{
+        display: flex;
+        justify-content: center; /*!!!!!!!!!!!!!!!!!!!!!*/
+    }
+
+    strong , .segundo-titulo{
+        font-size: 35px;
+    }
+
+    span , .segundo-subtitulo{
+        font-size: 25px;
+    }
+
+    .image-container-abuelo, .image-container-chicas{
+        width: 80%;
+    }
+
     .row.align-items-center {
         flex-direction: column; 
         text-align: center;
@@ -440,10 +434,23 @@ footer .container {
         font-size: 1.5rem; 
         margin: 0 10px;
     }
+     
+    .col-lg-4:not(.d-flex) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }    
 
-    .text-capitalize, .list-unstyled{
-        text-align: center;
+    .col-lg-4 h5,
+    .col-lg-4 ul {
+        text-align: left;
+        width: 100%; 
     }
+
+    .col-md-6{
+        width: 100%;
+    }
+
 }
 
 
@@ -495,3 +502,24 @@ footer .container {
         font-size: 1.3rem;
     }
 }
+
+@media(max-width: 636px){
+    
+}
+
+@media(max-width: 468px){
+    .text-capitalize, .list-unstyled{
+        /* display: flex; */
+        align-items: center;
+    }
+
+    strong, span {
+        font-size: 23px;
+    }
+    
+    .segundo-titulo {
+        font-size: 23px;
+    }
+}
+
+
