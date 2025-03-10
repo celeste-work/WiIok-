@@ -4,7 +4,7 @@
     outline: 1px solid red !important;
 } */
 
-body::before {
+/* body::before {
     content: "";
     position: fixed;
     top: 0;
@@ -14,7 +14,7 @@ body::before {
     background: blue;
     z-index: 9999;
     pointer-events: none;
-}
+} */
 
 
 
@@ -509,7 +509,6 @@ footer .container {
 
 @media(max-width: 468px){
     .text-capitalize, .list-unstyled{
-        /* display: flex; */
         align-items: center;
     }
 
@@ -519,6 +518,16 @@ footer .container {
     
     .segundo-titulo {
         font-size: 23px;
+    }
+
+    .logos{
+        display: flex;
+        justify-content: center;
+        width: 80px;
+    }
+
+    .image-container-abuelo, .image-container-chicas{
+        width: 100%;
     }
 }
 
