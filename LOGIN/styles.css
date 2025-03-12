@@ -5,6 +5,7 @@ body, html{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .parrafo-ancla{
@@ -71,6 +72,18 @@ body, html{
 a:hover{
   cursor: pointer;
 }
+
+.flecha {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;  
+  z-index: 10;  
+}
+
 
 @media(max-width: 900px){
   .form-check {
