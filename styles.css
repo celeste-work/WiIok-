@@ -16,8 +16,6 @@
     pointer-events: none;
 } */
 
-
-
 body, html {
     background-color: #FFF;
     font-family: 'Montserrat', sans-serif;
@@ -75,7 +73,6 @@ header {
 .background-container {
     position: relative;
     width: 100%;
-    /* height: calc(100vh - 15px);  */
     overflow: hidden;
 }
 

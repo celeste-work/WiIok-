@@ -1,38 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-   
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="logo-negro.png" type="image/x-icon">
+        <link rel="stylesheet" href="styles.css">
 
         <title>Login</title>
-        <style>
-            .vh-100 {
-                height: 100vh;
-            }
-        </style>
     </head>
+
     <body>
         <div class="container-fluid vh-100">
-            <div class="row h-100 gx-0"> <!-- Elimina espacio entre columnas -->
-                <!-- Sección izquierda con imagen y texto -->
+            <div class="row h-100 gx-0">
+
                 <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center section-left">
                     <h1 class="text-white display-3 fw-bold"><br><br><br>Bienvenidos a<br> Wilok!</h1>
-                    <img src="2 (2).png" alt="Logo Wilok" class="logo-top-left">
+                    <img src="logo-blanco.png" alt="Logo Wilok" class="logo-top-left">
                 </div>
 
-                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <!-- <div class="flecha"></div> -->
+
+                <div class="col-md-6 d-flex align-items-center justify-content-center mt-3">
                     <div class="w-75">
                         <div class="text-center">
                             <h1 class="negrita" style="font-family: 'League Spartan', sans-serif;">Ingresar</h1>
-                            <p class="color">Bienvenido, por favor ingresa a tu cuenta</p>
+                            <p class="parrafo-bienvenida color">Bienvenido, por favor ingresá a tu cuenta.</p>
                         </div>
                         
                         <label for="nombre" class="color">Nombre de usuario</label>
@@ -48,24 +45,22 @@
                                     Recordarme
                                 </label>
                             </div>    
-                            <a href="" class="d-block">¿Olvidaste tu contraseña?</a>
+                            <a href="" class="parrafo-ancla espacio-res">¿Olvidaste tu contraseña?</a>
                         </div>
-                        
                     
                         <div class="d-flex flex-column justify-content-center align-items-center">    
                             <button class="custom-button" onclick="login()">Ingresar</button>
-
-                                
-                            <p class="mt-3 d-flex justify-content-center color">
-                                ¿Nuevo usuario? <a class="d-block ms-1" id="registrarseBtn">Regístrate</a>
-                            </p>
-                            
-                        </div>
-                        
+                            <p class="parrafo-bienvenida mt-3 d-flex justify-content-center color">
+                                ¿Nuevo usuario? <a class="parrafo-ancla d-block ms-2" id="registrarseBtn">Regístrate</a>
+                            </p>                           
+                        </div>             
                     </div>
                 </div>
             </div>
         </div>
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <script src="script.js"></script>
     </body>  
 </html>
