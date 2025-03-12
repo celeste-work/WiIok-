@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
         "default": "Lo siento, no entendí eso. ¿Podrías repetirlo?"
     };
 
-
     function addMessage(content, sender) {
         const messageDiv = document.createElement("div");
         messageDiv.classList.add("message", sender, "mb-3", "text-" + (sender === "bot" ? "start" : "end"));
@@ -99,7 +98,7 @@ contactItems.forEach(contacto => {
 
         const closeChatBtn = document.getElementById("close-chat-btn");
         closeChatBtn.addEventListener("click", () => {
-            window.location.href = "/"; // Salir del chat (redirigir a home)
+            window.location.href = "/"; 
         });
 
         chatBody.innerHTML = `
@@ -162,19 +161,14 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    
     backBtn.addEventListener("click", () => {
         mostrarPantallaInicial();
         contactos.forEach(contacto => contacto.classList.remove("selected")); // Desseleccionar contactos
     });
-
     
-    mostrarPantallaInicial();
-
-    
+    mostrarPantallaInicial(); 
     window.addEventListener("resize", togglePantallaInicial);
 
-    
     contactos.forEach(contacto => {
         contacto.addEventListener("click", () => {
             contactos.forEach(c => c.classList.remove("selected"));
@@ -183,7 +177,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    
     togglePantallaInicial();
 });
 
@@ -199,3 +192,4 @@ document.addEventListener("DOMContentLoaded", () => {
         estadoDeConexion.classList.add(estado); 
     });
 });
+
