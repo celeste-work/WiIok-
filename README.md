@@ -1,32 +1,35 @@
-# Wilok! - Aplicación de Chat
+# Wilok! - Aplicación de Chat  
 
-**Wilok!** es una aplicación de chat desarrollada con JavaScript, HTML y CSS, diseñada para conectar a personas con sus amigos, familiares y conocidos. Con esta app, puedes disfrutar de una experiencia de mensajería en tiempo real, tanto en conversaciones individuales como grupales.
+**Wilok!** es una aplicación de chat desarrollada con JavaScript, HTML y CSS, diseñada para conectar a personas con sus amigos, familiares y conocidos. Con esta app, puedes disfrutar de una experiencia de mensajería en tiempo real, tanto en conversaciones individuales como grupales.  
 
-## 🚀 Funcionalidades
+## 🛠 Tecnologías utilizadas  
 
-- **Registro y gestión de usuarios**: Los usuarios pueden crear y gestionar su cuenta.
-- **Mensajes en tiempo real**: Envío y recepción de mensajes instantáneos.
-- **Chats grupales**: Posibilidad de crear y unirse a grupos de conversación.
-- **Notificaciones**: Recibe alertas de nuevos mensajes.
-- **Perfil de usuario**: Personaliza tu perfil y ve el de otros usuarios.
-- **Búsqueda de usuarios**: Encuentra y conecta con tus amigos para iniciar conversaciones.
+- **Frontend**: HTML, CSS, JavaScript  
 
-## 🛠 Tecnologías utilizadas
+## 🌐 Instrucciones de uso  
 
-- **Frontend**: HTML, CSS, JavaScript
+### 1️⃣ Acceder desde GitHub Pages  
+Puedes probar la aplicación sin necesidad de clonar el repositorio accediendo a través del siguiente enlace:  
+🔗 [Wilok! en GitHub Pages](https://celeste-work.github.io/WiIok-/index.html)  
 
-## 🌐 Instrucciones de uso
+Para iniciar sesión, usa la siguiente cuenta de prueba:  
+📧 **Correo**: `Fulanodetal@gmail.com`  
+🔑 **Contraseña**: `12345678`  
 
-1. **Clonar el repositorio**:
-   ```bash
-   git clone https://github.com/tu-usuario/WILOK.git
-   ```
+> ⚠️ **Importante:** La sección de **registrarse es solo visual**, no permite crear cuentas nuevas. Para acceder a la app, haz clic en **Ingresar** y usa los datos de prueba.  
 
-2. **Abrir la aplicación**:
-   - Solo necesitas abrir el archivo `index.html` en tu navegador.
+### 2️⃣ Clonar el repositorio manualmente  
+Si prefieres ejecutarlo localmente, sigue estos pasos:  
 
-3. ¡Listo! Ahora puedes comenzar a usar la aplicación de chat.
+```bash
+git clone https://github.com/tu-usuario/WILOK.git
+```
 
-## 👥 Proyecto grupal
+Luego, abre el archivo `index.html` en tu navegador.  
 
-Este proyecto fue realizado como parte del curso de Fundación MediaPila y fue desarrollado de manera colaborativa.
+---
+
+## 👥 Proyecto grupal  
+
+Este proyecto fue realizado como parte del curso de Fundación MediaPila y fue desarrollado de manera colaborativa.  
+
