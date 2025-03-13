@@ -178,27 +178,34 @@ body{
     border-color: #ff7b54; 
 }
 
+.btn-primary:active{
+    --bs-btn-active-bg: #ff7b54;
+    --bs-btn-active-border-color: #ff7b54; 
+}
+
 #user-input:focus {
     border-color: #ff7b54;  
     box-shadow: 0 0 5px rgba(255, 123, 84, 0.5); 
 }
 
+@media (min-width: 801px) {
+    #back-link {
+        display: none !important;
+    }
+}
+
 @media (max-width: 800px) {
 
-    #back-btn {
-        display: none; /* Inicialmente oculto */
-        border: none; /* Elimina el borde */
-        background-color: transparent; /* Fondo transparente */
-        color: #007bff; /* Color de la flecha */
-        font-size: 1.5rem; /* Tamaño de la flecha */
-        cursor: pointer; /* Asegura que el botón sea clickeable */
+    #back-link {
+        display: block !important;
+        --bs-btn-padding-x: none;
+        --bs-btn-padding-y: none;
+        position: relative;
+        margin-top: 30px;
+        margin-right: 5px;
+        transform: translateY(-50%);
+        --bs-btn-active-color: #ff7b54;
     }
-    
-    #back-btn:hover {
-        color: #0056b3; /* Cambio de color al pasar el mouse */
-    }
-    
-    
 
     #pantalla-inicial {
         display: none; 
@@ -240,9 +247,6 @@ body{
         z-index: 999; 
     }
 
-    #back-btn {
-        display: block !important;
-    }
 }
 
 @media (max-width: 949px){
