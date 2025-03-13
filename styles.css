@@ -153,29 +153,6 @@ body {
     overflow-x: hidden;
 }
 
-.watermark {
-    position: absolute;
-    width: 20%;
-    opacity: 0.2; 
-    z-index: -1; 
-}
-
-.primer-watermark{
-    width: 30%;
-}
-
-.watermark-top-left {
-    top: 1rem;
-    left: -7.2rem;
-    transform: rotate(-2deg);
-}
-
-.watermark-top-right {
-    top: 11rem;
-    right: -4.5rem;
-    transform: rotate(-12deg);
-}
-
 strong {
     font-size: 3rem;
     font-weight: 700;
@@ -467,9 +444,6 @@ footer .container {
 
 
 @media (max-width: 768px) {
-    .watermark {
-        display: none; 
-    }
 
     strong {
         font-size: 2.3rem;
@@ -498,10 +472,6 @@ footer .container {
     .bg-social a {
         font-size: 1.3rem;
     }
-}
-
-@media(max-width: 636px){
-    
 }
 
 @media(max-width: 468px){
